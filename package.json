@@ -1,0 +1,23 @@
+{
+  "name": "sati_2022_site",
+  "version": "1.0.0",
+  "description": "Arquivos para o site da SATI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorgfidler/SATI_2022_Site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igorgfidler/SATI_2022_Site/issues"
+  },
+  "homepage": "https://github.com/igorgfidler/SATI_2022_Site#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.11.5",
+    "bootstrap": "^5.1.3"
+  }
+}

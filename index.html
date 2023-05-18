@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="./css/main.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="h !important;
+    width: 35% !ttps://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Staatliches&display=swap" rel="stylesheet">
+    <title>SATI 2022</title>
+  </head>
+  <style>
+    .titulo{
+      font-family: 'Staatliches', cursive;
+    }
+    p, h1,h2,h3,h4,h5,h6, .cronograma {
+      font-family: 'Arimo', sans-serif;   
+    }
+    .hero-logo-size {
+      height: 40% !important;
+      width: 40% !important;
+    }
+    @media screen and (max-width: 768px) {
+      .hero-logo-size {
+        height: 75% !important;
+        width: 75% !important;
+      } 
+    }
+    @media screen and (min-width: 768.02px) and (max-width: 992px) {
+      .hero-logo-size {
+        height: 50% !important;
+        width: 50% !important;
+      } 
+    }
+    
+    .pt-section {
+      padding-top: 72px;
+    }
+  </style>
+
+  <body>
+    <!-- HERO -->
+    <header class="hero">
+      <div class="background-img"></div>
+        <div class="container-fluid d-flex h-100 align-items-center justify-content-center opacity-100" data-aos="zoom-in-up" data-aos-duration="2000">
+          <div class="flex-column text-center">
+            <img src="./static/logobranco.png" class="hero-logo-size alt="Logo da SATI">
+            <h3 class="text-secondary word-break titulo d-none d-sm-block h5">Venha se atualizar <span class="text-white">conosco.</span></h3>
+            <h3 class="text-secondary word-break titulo d-sm-none h6">Venha se atualizar <span class="text-white">conosco.</span></h3>
+            <h3 class="mb-4 text-white titulo h5 d-none d-sm-block h5">24 a 28 de Outubro</h3>
+            <h3 class="mb-4 text-white titulo h6 d-sm-none h6">24 a 28 de Outubro</h3>
+            <a href="#sobre" class="btn btn-invert-color border-secondary rounded text-decoration-none my-2 text-secondary rounded-pill border-2"> <i class="bi bi-card-text me-2"></i>Saiba mais</a>
+            <div class="d-flex justify-content-around align-items-center mt-4">
+              <span></span>
+              <img class="img-fluid col-3 col-md-2 col-xl-1" src="./static/patrocinadores/utfpr_braca.png" alt="Logo da UTFPR">
+              <img class="img-fluid col-3 col-md-2 col-xl-1" src="./static/patrocinadores/dainf_logo_x120.png" alt="Logo do DAINF">
+              <span></span>
+            </div>
+          </div>
+      </header>
+
+      </div>
+    <!-- FINAL HERO -->
+
+    <!-- INICIO HEADER -->
+    <!-- HEADER PARA DESKTOP-->
+
+    <nav class="navbar navbar-primary bg-primary sticky-top">
+      <div class="container-lg d-none d-lg-block">
+        <div class="d-flex align-items-center justify-content-between">
+          <a class="px-4 text-decoration-none" href="#">
+            <img class="img-fluid w-50 d-lg-block d-xxl-none" src="./static/logobranco_menor.png" alt="Logo da SATI">
+            <img class="img-fluid w-25 d-none d-xxl-block" src="./static/logobranco_menor.png" alt="Logo da SATI">
+          </a>
+          <nav class="nav col-12 px-4 col-lg-auto justify-content-center">
+            <a class="nav-link rounded text-decoration-none text-secondary" href="#sobre"> Sobre</a>
+            <a class="nav-link rounded text-decoration-none text-secondary" href="#atividades">Atividades</a>
+            <a class="nav-link rounded text-decoration-none text-secondary" href="#cronograma">Cronograma</a>
+            <a class="nav-link rounded text-decoration-none text-secondary" href="#palestrantes">Palestrantes</a>
+            <a class="nav-link rounded text-decoration-none text-secondary" href="#inscricao">Inscreva-se</a>
+            <a class="nav-link rounded text-decoration-none text-secondary" href="#Organizacao">Comitê Organizador</a>
+            <a class="nav-link rounded text-decoration-none text-secondary" href="#contatos">Contatos</a>
+          </nav>
+        </div>
+      </div>
+    <!-- FIM HEADER DESKTOP-->
+
+    <!-- HEADER MOBILE -->
+      <div class="container d-lg-none d-flex justify-content-between align-items-center">
+          <a class="px-4 text-decoration-none w-25" href="#">
+            <img class="img-fluid " src="./static/logobranco_menor.png" alt="logo sati">
+          </a>
+          <a class="nav-link btn-outline-secondary rounded text-decoration-none text-white border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#headerOffCanvas" aria-controls="Cabeçalho móvel"
+          >
+            <i class="bi bi-list"></i>
+          </a>
+
+        <div class="offcanvas offcanvas-end bg-dark w-50" tabindex="-1" id="headerOffCanvas" 
+        aria-labelledby="Cabeçalho para dispositívos móveis">
+          <div class="offcanvas-body bg-primary">
+            <nav class="nav flex-column">
+              <a class="nav-link btn border-0 text-decoration-none text-secondary" href="#sobre"> Sobre</a>
+              <a class="nav-link btn border-0 text-decoration-none text-secondary" href="#atividades">Atividades</a>
+              <a class="nav-link btn border-0 text-decoration-none text-secondary" href="#cronograma">Cronograma</a>
+              <a class="nav-link btn border-0 text-decoration-none text-secondary" href="#palestrantes">Palestrantes</a>
+              <a class="nav-link btn border-0 text-decoration-none text-secondary" href="#inscricao">Inscreva-se</a>
+              <a class="nav-link btn border-0 text-decoration-none text-secondary" href="#Organizacao">Comitê Organizador</a>
+              <a class="nav-link btn border-0 text-decoration-none text-secondary" href="#contatos">Contatos</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- FIM HEADER MOBILE-->
+    <!-- FIM HEADER -->
+
+    <main>
+      <!-- INICIO SOBRE -->
+      <section id="sobre" class="pt-section data-aos="fade-in" data-aos-duration="700">
+        <div class="container border-bottom col-12 col-xxl-8 py-2 px-4">
+          <div class="d-flex row flex-md-row-reverse py-4 justify-content-center">
+            <div id="carouselSobre" class="carousel slide col-12 col-md-6" data-aos="fade-left" data-aos-duration="1000"
+              data-bs-ride="carousel" data-bs-interval="5000">
+              <ul class="carousel-indicators">
+                <li data-bs-target="#carouselSobre" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Primeira Imagem"></li>
+                <li data-bs-target="#carouselSobre" data-bs-slide-to="1" aria-label="Segunda Imagem"></li>
+                <li data-bs-target="#carouselSobre" data-bs-slide-to="2" aria-label="Terceira Imagem"></li>
+              </ul>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <img class="img-fluid rounded" src="./static/img-1.jpg" alt="Primeira Imagem">
+                </div>
+                <div class="carousel-item">
+                  <img class="img-fluid rounded" src="./static/img-2.jpg" alt="Segunda Imagem">
+                </div>
+                <div class="carousel-item">
+                  <img class="img-fluid rounded" src="./static/img-3.jpg" alt="Terceira Imagem">
+                </div>
+              </div>
+            </div> 
+            <div class="col-12 col-md-6" data-aos="fade-right" data-aos-duration="1000">
+              <h2 class="text-start text-md-center pb-4 pt-3 pt-md-0" >O que é a SATI?</h2>
+              <p class="text-start text-md-center">
+                A Semana de Atualização em Tecnologia da Informação é uma forma de aproximar os alunos dos profissionais
+                da área. O evento conta com uma séria de palestras, cursos e outras atividades para trazer novidades
+                relacionadas as diversas áreas de atuação dos cursos de informática.
+              </p>
+            </div>
+          </div>  
+        </div>
+      </section>
+      <!-- FIM SOBRE-->
+
+      <!-- INICIO ATIVIDADES -->
+      <section id="atividades" class="pt-section">
+        <div class="container py-2 px-4 border-bottom" data-aos="fade-in" data-aos-duration="1000">
+          <h2 class="text-start pt-2 pb-4">Atividades disponíveis</h2>
+          <div class="row d-flex justify-content-center pb-4">
+            <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 pe-lg-4" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000">
+              <h3 class="text-start">Palestras</h3>
+              <p>Teremos diferentes palestras para discutir sobre inovação, segurança no mundo virtual, saúde mental, capital de risco, sobre o perfil do profissional de T.I. e Domain Driven Design.</p>
+            </div>
+            <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 px-sm-4" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="1000">
+              <h3 class="text-start">Cursos</h3>
+              <p>Haverá minicursos sobre Git e Github, e Latex além de vários tipos de Workshops como ReactJS, Power BI, DevOps e Games.</p>
+            </div>
+            <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 px-lg-4" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="1000">
+              <h3 class="text-start">Visitas técnicas</h3>
+              <p>Será visitada a Trizy, responsável por uma plataforma de agendamento para cargas e descargas de caminhões em dois momentos diferentes.</p>
+            </div>
+            <div class="col-10 col-sm-6 col-lg-4 pt-2 pb-4 px-lg-4" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="1000">
+              <h3 class="text-start">Desafios de Programação</h3>
+              <p>Para finalizar com grande estilo teremos um Hackaton e uma maratona de programação.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FIM ATIVIDADES -->
+
+      <!--INICIO CRONOGRAMA-->
+      <section id="cronograma" class="cronograma pt-section data-aos="fade-in" data-aos-duration="1000">
+        <div class="container border-bottom">
+          <h2>Cronograma</h2>
+          <p><br></p>
+          <nav> 
+              <div class="nav bg-white justify-content-center justify-content-md-start" id="nav-tab" role="tablist">
+                <button class="nav-link btn mb-1 rounded text-primary me-1" id="segunda-tab" data-bs-toggle="tab" data-bs-target="#segunda" type="button" role="tab" aria-controls="segunda" aria-selected="true">Segunda</button>
+                <button class="nav-link btn mb-1 rounded text-primary mx-1" id="terca-tab" data-bs-toggle="tab" data-bs-target="#terca" type="button" role="tab" aria-controls="terca" aria-selected="false">Terça</button>
+                <button class="nav-link btn mb-1 rounded text-primary mx-1" id="quarta-tab" data-bs-toggle="tab" data-bs-target="#quarta" type="button" role="tab" aria-controls="quarta" aria-selected="false">Quarta</button>
+                <button class="nav-link btn mb-1 rounded text-primary mx-1" id="quinta-tab" data-bs-toggle="tab" data-bs-target="#quinta" type="button" role="tab" aria-controls="quinta" aria-selected="false">Quinta</button>
+              </div>
+            </nav>
+            <div class="tab-content small" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="segunda" role="tabpanel" aria-labelledby="segunda-tab">
+                  <div class="row"> <!-- Grade horária segunda-feira -->   
+                    <div class="table-responsive">     
+                      <table class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th class="col-1">Horários</th>
+                            <th class="col-3">Atividades da segunda</th>
+                            <th class="col-3">Ministrante</th>
+                            <th class="col-3">Local</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center"><nobr>10h &#8212 11h</nobr></td>
+                            <td><nobr>Abertura</nobr></td>
+                            <td><nobr>Representantes da SATI</nobr></td>
+                            <td><nobr>Centro de Convivência</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>11h &#8212 12h</nobr></td>
+                            <td><nobr>Palestra "Cultura da inovação corporativa"</nobr></td>
+                            <td><nobr>Leopoldo Suarez</nobr></td>
+                            <td><nobr>Centro de Convivência</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>13h &#8212; 15h</nobr></td>
+                            <td><nobr>Workshop - ReactJS</nobr></td>
+                            <td><nobr>André Garcia</nobr></td>
+                            <td><nobr>LAB VI</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>13h &#8212; 15h</nobr></td>
+                            <td><nobr>Workshop - Power BI </nobr></td>
+                            <td><nobr>Isabelle Okuma</nobr></td>
+                            <td><nobr>LAB VII</nobr></td>
+                          </tr>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>15h &#8212; 15:30</nobr></td>
+                            <td><nobr>Coffee Break</nobr></td>
+                            <td><nobr></nobr></td>
+                            <td><nobr>Corredor Bloco C</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>15:30 &#8212; 17:30</nobr></td>
+                            <td><nobr>Workshop - ReactJS</nobr></td>
+                            <td><nobr>André Garcia</nobr></td>
+                            <td><nobr>LAB VI</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>15:30 &#8212; 17:30</nobr></td>
+                            <td><nobr>Workshop - Power BI </nobr></td>
+                            <td><nobr>Isabelle Okuma</nobr></td>
+                            <td><nobr>LAB VII</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>19h &#8212 20h</nobr></td>
+                            <td><nobr>Palestra "Cybersegurança"</nobr></td>
+                            <td><nobr>Pedro Henrique Guimarães</nobr></td>
+                            <td><nobr>Centro de Convivência</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>20h &#8212 21h</nobr></td>
+                            <td><nobr>Palestra "Secure Code"</nobr></td>
+                            <td><nobr>Fernando Barreto</nobr></td>
+                            <td><nobr>Centro de convivência</nobr></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="terca" role="tabpanel" aria-labelledby="terca-tab">
+                <div class="row">
+                  <div class="table-responsive"> <!-- Grade horária terça-feira -->        
+                      <table class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th class="col-1">Horários</th>
+                            <th class="col-3">Atividades da terça</th>
+                            <th class="col-3">Ministrante</th>
+                            <th class="col-3">Local</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center"><nobr>8h &#8212 12h</nobr></td>
+                            <td><nobr>Visita Técnica Trizy</nobr></td>
+                            <td><nobr>Trizy</nobr></td>
+                            <td><nobr><a class="btn-invert-color py-2 pe-2 rounded text-decoration-none" target="_blank" href="https://g.page/trizy?share"><i class="bi bi-geo-alt mx-2"></i>Empresa Trizy</a></nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>13h &#8212 15h</nobr></td>
+                            <td><nobr>Workshop - Games</nobr></td>
+                            <td><nobr>Willian Zarpellon</nobr></td>
+                            <td><nobr>Laboratório de Informática VI</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>15h &#8212; 15:30</nobr></td>
+                            <td><nobr>Coffee Break</nobr></td>
+                            <td><nobr></nobr></td>
+                            <td><nobr>Corredor Bloco C</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>15:30 &#8212; 17:30</nobr></td>
+                            <td><nobr>Workshop - Games</nobr></td>
+                            <td><nobr>Willian Zarpellon</nobr></td>
+                            <td><nobr>Laboratório de Informática VI</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>19h &#8212 21h</nobr></td>
+                            <td><nobr>Apresentação de Empresas</nobr></td>
+                            <td><nobr></nobr></td>
+                            <td><nobr>Centro de Convivência</nobr></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="quarta" role="tabpanel" aria-labelledby="quarta-tab">
+                  <div class="row"> <!-- Grade horária quarta-feira -->
+                    <div class="table-responsive">    
+                      <table class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th class="col-1">Horários</th>
+                            <th class="col-3">Atividades da quarta</th>
+                            <th class="col-3">Ministrante</th>
+                            <th class="col-3">Local</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center"><nobr>11h &#8212 12h</nobr></td>
+                            <td><nobr>Palestra "Venture Capital"</nobr></td>
+                            <td><nobr>Guilherme Francisco do Prado</nobr></td>
+                            <td><nobr>Auditório L</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>13h &#8212 15h</nobr></td>
+                            <td><nobr>Minicurso - Latex/Overleaf</nobr></td>
+                            <td><nobr>Rafael Porto</nobr></td>
+                            <td><nobr>Lab VI</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>13h &#8212 15h</nobr></td>
+                            <td><nobr>Workshop DevOps</nobr></td>
+                            <td><nobr>Natan Rigailo</nobr></td>
+                            <td><nobr>Lab VII</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>15h &#8212; 15:30</nobr></td>
+                            <td><nobr>Coffee Break</nobr></td>
+                            <td><nobr></nobr></td>
+                            <td><nobr>Corredor Bloco C</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>15:30 &#8212; 17:30</nobr></td>
+                            <td><nobr>Minicurso - Git/Github</nobr></td>
+                            <td><nobr>Bruno Leria</nobr></td>
+                            <td><nobr>Lab VI</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>15:30 &#8212; 17:30</nobr></td>
+                            <td><nobr>Workshop DevOps</nobr></td>
+                            <td><nobr>Natan Rigailo</nobr></td>
+                            <td><nobr>Lab VII</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>19h &#8212 20h</nobr></td>
+                            <td><nobr>Palestra "Perfil do Profissional de TI"</nobr></td>
+                            <td><nobr>Jean Figueredo da Silva</nobr></td>
+                            <td><nobr>Auditório L</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>20h &#8212 21h</nobr></td>
+                            <td><nobr>Palestra "Saúde Mental" </nobr></td>
+                            <td><nobr>Tabata Trindade e Peterson Santos</nobr></td>
+                            <td><nobr>Auditório L</nobr></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>  
+              </div>
+              <div class="tab-pane fade" id="quinta" role="tabpanel" aria-labelledby="quinta-tab">
+                  <div class="row"> <!-- Grade horária quinta-feira -->
+                    <div class="table-responsive">        
+                      <table class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th class="col-1">Horários</th>
+                            <th class="col-3">Atividades da quinta</th>
+                            <th class="col-3">Ministrante</th>
+                            <th class="col-3">Local</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center"><nobr>8h &#8212 12h</nobr></td>
+                            <td><nobr>Visita Técnica</nobr></td>
+                            <td><nobr>Trizy</nobr></td>
+                            <td><nobr><a class="btn-invert-color py-2 pe-2 rounded text-decoration-none"href="https://g.page/trizy?share" target="_blank"><i class="bi bi-geo-alt mx-2"></i>Empresa Trizy</a></nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>8h &#8212 21h</nobr></td>
+                            <td><nobr>Hackaton</nobr></td>
+                            <td><nobr>#descubra</nobr></td>
+                            <td><nobr>#descubra</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>13h &#8212 15h</nobr></td>
+                            <td><nobr>Workshop - AWS</nobr></td>
+                            <td><nobr>Fernando Ribeiro</nobr></td>
+                            <td><nobr>Lab VI</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>13h &#8212 18h</nobr></td>
+                            <td><nobr>Maratona</nobr></td>
+                            <td><nobr>#descubra</nobr></td>
+                            <td><nobr>#descubra</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>15h &#8212; 15:30</nobr></td>
+                            <td><nobr>Coffee Break</nobr></td>
+                            <td><nobr></nobr></td>
+                            <td><nobr>Corredor Bloco C</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>15:30 &#8212; 17:30</nobr></td>
+                            <td><nobr>Workshop - AWS</nobr></td>
+                            <td><nobr>Fernando Ribeiro</nobr></td>
+                            <td><nobr>Lab VI</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>19h &#8212 20h</nobr></td>
+                            <td><nobr>Palestra "Domain Driven Design"</nobr></td>
+                            <td><nobr>Maurício Santos</nobr></td>
+                            <td><nobr>Auditório C</nobr></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><nobr>20h &#8212 21h</nobr></td>
+                            <td><nobr>Encerramento</nobr></td>
+                            <td><nobr>Representantes da SATI</nobr></td>
+                            <td><nobr>Auditório C</nobr></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>  
+              </div>
+            </div>
+          </div>
+          <p><br></p>
+      </section>
+      <!--FIM CRONOGRAMA-->
+      <!-- INICIO PALESTRANTES -->
+      <section id="palestrantes" class="pt-section" data-aos="fade-in" data-aos-duration="1000">
+        <div class="container py-2 px-4 border-bottom">
+          <!-- TODO: DEFINIR SE ESTA SEÇÃO VAI SE CHAMAR PALESTRANTES MESMO -->
+          <h2 class="text-start pt-2 pb-4">Palestrantes</h2>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 py-2" data-aos="fade-in" data-aos-duration="1000">
+            
+            <div class="col py-2">
+              <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-4 col-md-12">
+                    <img class="img-fluid rounded-circle" src="./static/palestrantes/isabelle.jpg" alt="PLACEHOLDER">
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Isabelle Okuma <a href="https://www.linkedin.com/in/isabelleokuma/" class="p-2 py-1 btn-invert-color btn rounded"><i class="bi bi-linkedin text-center"></i></a></h5>
+                      <p class="card-text small">Engenheira de Computação | Analista de Dados na KMM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <div class="col py-2">
+              <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-4 col-md-12">
+                    <img class="img-fluid rounded-circle" src="./static/palestrantes/andre_garcia.jpg" alt="PLACEHOLDER">
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">André Garcia <a href="https://www.linkedin.com/in/andrecadgarcia/" class="p-2 py-1 btn-invert-color btn rounded"><i class="bi bi-linkedin text-center"></i></a></h5>
+                      <p class="card-text small">Desenvolvedor na KMM | Inovup</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-4 col-md-12">
+                    <img class="img-fluid rounded-circle" src="./static/palestrantes/dummy-profile-pic_0_200x200.jpeg" alt="PLACEHOLDER">
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Fernando Ribeiro <a href="https://www.linkedin.com/in/fernandoribeiro7/" class="p-2 py-1 btn-invert-color btn rounded"><i class="bi bi-linkedin text-center"></i></a></h5>
+                      <p class="card-text small">Co-fundador e CTO da Madaseg & Madatech</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-4 col-md-12">
+                    <img class="img-fluid rounded-circle" src="./static/palestrantes/cassiano.jpg" alt="PLACEHOLDER">
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Cassiano Piekarski <a href="https://www.linkedin.com/in/cassiano-moro-piekarski/" class="p-2 py-1 btn-invert-color btn rounded"><i class="bi bi-linkedin text-center"></i></a></h5>
+                      <p class="card-text small">CSO na Inbix Ventures | Inovação e ESG na KMM | Professor</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-4 col-md-12">
+                    <img class="img-fluid rounded-circle" src="./static/palestrantes/guilherme.jpg" alt="PLACEHOLDER">
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Guilherme Francisco do Prado <a href="https://www.linkedin.com/in/guilherme-francisco-do-prado-659335a6/" class="p-2 py-1 btn-invert-color btn rounded"><i class="bi bi-linkedin text-center"></i></a></h5>
+                      <p class="card-text small">CEO e Co-fundador na Inbix Ventures | Professor</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-4 col-md-12">
+                    <img class="img-fluid rounded-circle" src="./static/palestrantes/mauricio.jpg" alt="PLACEHOLDER">
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Maurício dos Santos <a href="https://www.linkedin.com/in/mauriciosantosvirtual/" class="p-2 py-1 btn-invert-color btn rounded"><i class="bi bi-linkedin text-center"></i></a></h5>
+                      <p class="card-text small">CTO na KMM </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-4 col-md-12">
+                    <img class="img-fluid rounded-circle" src="./static/palestrantes/leopoldo.jpg" alt="PLACEHOLDER">
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Leopoldo Suarez <a href="https://www.linkedin.com/in/leopoldo-suarez/" class="p-2 py-1 btn-invert-color btn rounded"><i class="bi bi-linkedin text-center"></i></a></h5>
+                      <p class="card-text small">COO na KMM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-4 col-md-12">
+                    <img class="img-fluid rounded-circle" src="./static/palestrantes/willian.jpg" alt="PLACEHOLDER">
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Willian Zarpellon <a href="https://www.linkedin.com/in/willianzarpellon/" class="p-2 py-1 btn-invert-color btn rounded"><i class="bi bi-linkedin text-center"></i></a></h5>
+                      <p class="card-text small">UI Designer / Game Developer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-4 col-md-12">
+                    <img class="img-fluid rounded-circle" src="./static/palestrantes/hobbit.jpg" alt="PLACEHOLDER">
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Rafael Porto<a href="https://www.linkedin.com/in/rafael-porto-1784a8160/" class="p-2 py-1 btn-invert-color btn rounded"><i class="bi bi-linkedin text-center"></i></a></h5>
+                      <p class="card-text small">Aluno na Universidade Tecnológica Federal do Paraná</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-4 col-md-12">
+                    <img class="img-fluid w-75 rounded-circle" src="./static/palestrantes/bruno_leria.jpg" alt="PLACEHOLDER">
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Bruno Leria <a href="https://www.linkedin.com/in/bruno-l-77a07486" class="p-2 py-1 btn-invert-color btn rounded"><i class="bi bi-linkedin text-center"></i></a></h5>
+                      <p class="card-text small">Desenvolvedor Web Front-End na AquiCob</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col py-2">
+              <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-4 col-md-12">
+                    <img class="img-fluid rounded-circle" src="./static/palestrantes/pedro.jpg" alt="PLACEHOLDER">
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Pedro Guimarães<a href="https://www.linkedin.com/in/pedro-henrique-guimar%C3%A3es-ara%C3%BAjo-6b0bb846/" class="p-2 py-1 btn-invert-color btn rounded"><i class="bi bi-linkedin text-center"></i></a></h5>
+                      <p class="card-text small">Operações de TI e Segurança da Informação no Grupo Tigre</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-4 col-md-12">
+                    <img class="img-fluid w-75 rounded-circle" src="./static/palestrantes/fernando_barreto.png" alt="PLACEHOLDER">
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Fernando Barreto <a href="https://www.linkedin.com/in/fernando-barreto" class="p-2 py-1 btn-invert-color btn rounded"><i class="bi bi-linkedin text-center"></i></a></h5>
+                      <p class="card-text small">Coordenador de Segurança da Informação (BISO) @ Trizy | Segurança da Informação | Projetos e Arquiteturas em Cloud Computing | Escritor</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-4 col-md-12">
+                    <img class="img-fluid rounded-circle" src="./static/palestrantes/natan.jpg" alt="PLACEHOLDER">
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Natan Rigailo <a href="https://www.linkedin.com/in/natanrigailo/" class="p-2 py-1 btn-invert-color btn rounded"><i class="bi bi-linkedin text-center"></i></a></h5>
+                      <p class="card-text small">Gerente de projetos na PLSS Soluções</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-4 col-md-12">
+                    <img class="img-fluid rounded-circle" src="./static/palestrantes/tabata_200x200.jpeg" alt="PLACEHOLDER">
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Tabata Trindade</h5>
+                      <p class="card-text small">Profissional da área de Recursos Humanos, atuando há mais de 10 anos no ambiente organizacional de multinacional e recentemente em startup. Psicóloga com foco organizacional.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-4 col-md-12">
+                    <img class="img-fluid rounded-circle" src="./static/palestrantes/peterson.jpg" alt="PLACEHOLDER">
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Peterson Fogaça <a href="https://br.linkedin.com/in/peterson-foga%C3%A7a-dos-santos-bab8019a" class="p-2 py-1 btn-invert-color btn rounded"><i class="bi bi-linkedin text-center"></i></a></h5>
+                      <p class="card-text small">Analista de Gente e Gestão</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card card-hover-zoom shadow text-center" data-aos="fade-in" data-aos-duration="1200">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-4 col-md-12">
+                    <img class="img-fluid rounded-circle" src="./static/palestrantes/jean.png" alt="Jean Figueredo da Silva">
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Jean Figueredo da Silva <a href="https://www.linkedin.com/in/jeanfigueredosilva/" class="p-2 py-1 btn-invert-color btn rounded"><i class="bi bi-linkedin text-center"></i></a></h5>
+                      <p class="card-text small">Coordenador de TI para o negócio florestal da
+Klabin SA há 15 anos. Gestor de pessoas e times, atuante em transformação
+digital e geração de valor ao negócio com práticas de agilidade. Gestão de
+tecnologia voltada a processos de negócio.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+      </section>
+      <!-- FIM PALESTRANTES -->
+
+      <section id="inscricao" class="bg-primary" data-aos="fade-in" data-aos-duration="1000" style="padding-top: 56px;">
+        <div class="container py-2 px-4">
+          <div class="d-flex flex-column justify-content-center align-items-center text-secondary pb-4">
+            <h2 class="text-center h3 mt-2 mb-4">Ficou interessado?</h2>
+            <a href="https://www.even3.com.br/sati-2022/" target="_blank" class="btn btn-invert-color p-3 border-secondary rounded text-decoration-none mb-2 text-secondary rounded-pill border-2">Inscreva-se</a>
+            <span class="my-1 text-center"><i class="bi bi-calendar3-range"></i> <b>Período: </b> 30/09 a 07/10</span>
+            <span class="my-1 text-center"><i class="bi bi-coin"></i> <b>Valor: </b> Doação de um produto de limpeza¹</span>
+            <span class="my-1 text-center"><i class="bi bi-calendar3-week"></i> <b>Período de confirmação da inscrição:</b> 03/10 a 07/10²</span>
+            <span class="my-1 text-center"><i class="bi bi-geo-alt"></i> <b>Local de confirmação:</b> Sala C204 (Sala de atendimento ao aluno)</span>
+            <span class="my-1 text-center"><i class="bi bi-clock"></i> <b>Horário de confirmação:</b> 14h às 17h | 19h às 21h</span>
+            <span class="text-center mt-3 small">¹O produto de limpeza será doado à <b>Escola de Educação Básica Dra. Zilda Arns na Modalidade de Educação Especial</b>,<br> cedido pela <b>Associação Artesanal do Excepcional de Ponta Grossa (ASSARTE)</b>.</span>
+            <span class="text-center my-3 small pb-2">²A confirmação da inscrição será realizada presencialmente no momento de entrega da doação</span>
+          </div>
+        </div>
+      </section>
+
+      
+    </main>
+
+      <!-- INICIO APOIADORES -->
+      <section id="apoiadores" class="py-4" data-aos="fade-in" data-aos-duration="1500">
+        <div class="container border-bottom pb-4">
+          <h2 class="text-start pt-2 pb-4">Apoiadores</h2>
+          <div class="row d-flex justify-content-evenly align-items-center">
+            <div class="col-6 my-4">
+              <img src="static/patrocinadores/Logo-UTFPR_x120.png" alt="Logo UTFPR" class="img-fluid mx-auto d-block">
+            </div>            
+            <div class="col-6 my-4">
+              <img class="img-fluid mx-auto d-block" src="static/patrocinadores/dainf_logo_x120.png" alt="Logo DAINF" loading="lazy">
+            </div>
+            <div class="col-4 my-4">
+              <img class="img-fluid mx-auto d-block" src="static/patrocinadores/lesic.png" alt="Logo LESIC" loading="lazy">
+            </div>
+            <div class="col-4 my-4">
+              <img class="img-fluid mx-auto d-block" src="static/patrocinadores/Logo-PPGCC_x60.png" alt="Logo PPGCC" loading="lazy">
+            </div>
+            <div class="col-4 my-4">
+              <img class="img-fluid mx-auto d-block" src="static/patrocinadores/dacomp_x60.png" alt="Logo Dacomp" loading="lazy">
+            </div>            
+          </div>					
+        </div>
+      </section>
+      <!-- FIM APOIADORES -->
+
+      <!-- INICIO PATROCINADORES -->
+      <section id="patrocinadores" class="py-4" data-aos="fade-in" data-aos-duration="1500">
+        <div class="container border-bottom pb-4">
+          <h2 class="text-start pt-2 pb-4">Patrocinadores</h2>
+          <div class="row d-flex justify-content-evenly align-items-center">
+            <div class="col-3 col-lg-2 my-4">
+              <img class="img-fluid mx-auto d-block" src="static/patrocinadores/kmm_marca-1-principal_x60.png" alt="Logo KMM" loading="lazy">
+            </div>
+            <div class="col-3 col-lg-1 my-4">
+              <img class="img-fluid mx-auto d-block" src="static/patrocinadores/trizy_x60.jpg" alt="Logo Trizy" loading="lazy">
+            </div>
+            <div class="col-3 col-lg-1 my-4">
+              <img class="img-fluid mx-auto d-block" src="static/patrocinadores/plss_1_x60.png" alt="Logo PLSS" loading="lazy">
+            </div>
+            <div class="col-3 col-lg-1 my-4">
+              <img class="img-fluid mx-auto d-block" src="static/patrocinadores/inbix_x60.jpeg" alt="Logo Inbix" loading="lazy">
+            </div>
+            <div class="col-3 col-lg-2 my-4">
+              <img class="img-fluid mx-auto d-block" src="static/patrocinadores/MMTech_x60.png" alt="Logo MMTech" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FIM PATROCINADORES -->
+
+      <!-- INICIO COMITE ORGANIZADOR-->
+      <section id="Organizacao" class="pb-4 pt-section" data-aos="fade-in" data-aos-duration="1500">
+        <div class="container border-bottom pb-4">
+          <h2 class="text-start pt-2 pb-4">Comitê organizador</h2>
+          <div class="row d-flex justify-content-center align-items-top">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <h3 class="text-center mt-4 mt-lg-0 py-2">Agenda</h3>
+              <p class="text-center">Douglas Teixeira Cobiank</p>
+              <p class="text-center">Hiévellen Caetano</p>
+              <p class="text-center">Lázaro Santos Nascimento</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <h3 class="text-center mt-4 mt-lg-0 py-2 ">Coordenação Geral</h3>
+                <p class="text-center">Amanda Rodrigues Vieira</p>
+                <p class="text-center">profª Dra. Simone Nasser Matos</p>
+                <p class="text-center">profª Dra. Helyane Bronoski Borges</p>
+                <p class="text-center">prof° Me. Geraldo Ranthum</p>
+                <p class="text-center">profª Dra. Simone de Almeida</p>
+            </div>
+            <div class="col-lg-4 d-lg-block d-none">
+              <h3 class="text-center py-2">Comunicação</h3>
+              <p class="text-center">Gabriel Dalzoto Salles</p>
+              <p class="text-center">Rafael Andrade (colaborador)</p>
+              <h3 class="text-center py-2">Finanças</h3>
+              <p class="text-center">Elquias Monteiro</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <h3 class="text-center mt-4 mt-lg-0 py-2 ">Logística</h3>
+              <p class="text-center">Igor Pereira Fernandes Castro</p>
+              <p class="text-center">Maria Eduarda Pedroni Campos Santos</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <h3 class="text-center mt-4 mt-lg-0 py-2">Documentação e TI</h3>
+                <p class="text-center">Igor Guilherme Fidler</p>
+                <p class="text-center">João Gabriel Koleski</p>
+            </div>
+            <div class="col-sm-12 col-md-6 d-block d-lg-none">
+              <h3 class="text-center mt-4 mt-lg-0 py-2">Comunicação</h3>
+              <p class="text-center">Gabriel Dalzoto Salles</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 d-block d-lg-none">
+              <h3 class="text-center mt-4 mt-lg-0 py-2">Finanças</h3>
+              <p class="text-center">Elquias Monteiro</p>
+            </div>
+          </div>
+      </section>
+      <!-- FIM COMITE ORGANIZADOR-->
+
+      <!-- INICIO CONTATO -->
+      <section id="contatos" class="pt-section" data-aos="fade-in" data-aos-duration="1000">
+        <div class="container py-2 px-4 border-bottom">
+            <h2 class="text-start pt-2 pb-2">Contatos</h2>
+            <div class="row row-cols-1 row-cols-md-2 py-2 py-md-4">
+              <!-- esquerdo -->
+              <div class="col d-flex justify-content-center justify-content-md-start" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
+                <ul class="list-unstyled text-start">
+                  <li>
+                    <div class="contact-hover py-2 d-flex align-items-center">
+                      <div class="icon-square rounded d-inline-flex align-items-center
+                      justify-content-center flex-shrink-0 fs-1 px-2">
+                        <i class="bi bi-geo-alt"></i>
+                      </div>
+                      <div class="px-4">
+                        <h4>Localização</h4>
+                        <p>UTFPR - R. Doutor Washington Subtil Chueire, 330 - Jardim Carvalho, Ponta Grossa - PR, 84017-220</p>
+                      </div>
+                    </div>
+                  </li>
+  
+                  <li>
+                    <div class="contact-hover py-2 d-flex align-items-center">
+                      <div class="icon-square rounded d-inline-flex align-items-center
+                      justify-content-center flex-shrink-0 fs-1 px-2">
+                      <i class="bi bi-telephone"></i>
+                      </div>
+                      <div class="px-4">
+                        <h4>Telefone</h4>
+                        <p>(42) 98803-2005 </p>
+                      </div>
+                    </div>
+                  </li>
+  
+                  <li>
+                    <div class="contact-hover py-2 d-flex align-items-center">
+                      <div class="icon-square rounded d-inline-flex align-items-center
+                        justify-content-center flex-shrink-0 fs-1 px-2">
+                        <i class="bi bi-envelope"></i>
+                      </div>
+                      <div class="px-4">
+                        <h4>E-mail</h4>
+                        <p>sati.pg.utfpr@gmail.com</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>   
+              </div>
+  
+              <!-- direito -->
+              <div class="col" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <form id="formContato" action="https://submit-form.com/IHSMtUNh" method="post" class="py-2 py-md-0 needs-validation" novalidate>
+                  <h3 class="text-center mb-4">Deixe uma sugestão</h3>
+                  <div class="form-floating mb-3">
+                    <input type="hidden" name="_append" value="false" />
+                    <input
+                      type="text"
+                      class="form-control" id="nome" name="nome" placeholder="e.g. João da Silva" required aria-required="true">
+                    <label for="nome">Nome completo</label>
+                    <div class="invalid-feedback">
+                      <span>Por favor insira o seu nome</span>
+                    </div>
+                  </div>
+  
+                  <div class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control has-validation" id="email" name="email" placeholder="nome@exemplo.com" required aria-required="true">
+                    <label for="email">E-mail</label>
+                    <div class="invalid-feedback">Insira um e-mail válido</div>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="textAreaForm" name="descricao" style="height: 100px" required aria-required="true"></textarea>
+                    <label for="textAreaForm">Sugestões</label>
+                    <div class="invalid-feedback">Por favor deixa uma mensagem para nós</div>
+                  </div>
+                  <button id="btnFormContato" type="submit" class="my-4 float-end btn btn-primary btn-invert-color border-0 text-white">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIM CONTATOS -->
+
+    <!-- INICIO FOOTER -->
+    <footer class="py-2 bg-primary text-center text-white">
+      <section class="container d-flex justify-content-center pt-2 pb-4">
+        <div class="px-2 my-auto">
+          <span>Conecte-se conosco:</span>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/sati.pg/" target="_blank" class="btn btn-invert-color rounded d-inline-flex px-2 text-secondary">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="container text-center mb-2">
+        <div class="row d-flex justify-content-around">
+            <div class="col-10 col-sm-6 col-md-4 py-4 py-md-0">
+              <h5 class="mb-3">SATI</h5>
+              <p>Um evento feito com carinho &#10084;</p>
+            </div>
+
+            <div class="col-10 col-sm-6 col-md-4 py-4 py-md-0 ">
+              <h5 class="mb-2">Links Úteis</h5>
+              <nav>
+                <a href="https://www.even3.com.br/sati-2022/" target="_blank" class="btn btn-invert-color rounded text-decoration-underline text-secondary">Inscreva-se</a>
+              </nav>
+            </div>
+
+            <div class="col-10 col-sm-6 col-md-4 py-4 py-md-0">
+              <h5 class="mb-3">Contatos</h5>
+              <div class="container d-flex justify-content-center">
+                <ul class="list-unstyled text-start ms-4 small">
+                  <li>
+                    <p><i class="bi bi-geo-alt mx-2"></i>UTFPR-PG bloco L</p>
+                  </li>
+                  <li>
+                    <p><i class="bi bi-whatsapp mx-2"></i>(42) 98803-2005</p>
+                  </li>
+                  <li>
+                    <p class="text-nowrap"><i class="bi bi-envelope mx-2"></i>sati.pg.utfpr@gmail.com</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- FIM FOOTER -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script>
+      form = document.getElementById("formContato");
+      form.addEventListener("submit", event => {
+        if(!checkForm()) {
+          event.preventDefault();
+          event.stopPropagation();
+        } 
+          
+        form.classList.add("was-validated")
+      }, false)
+     
+
+      function checkForm() {
+        let form = document.getElementById("formContato");
+        let btn = document.getElementById("btnFormContato");
+
+        let canSubmit = true;
+
+        if (form[0].value.length < 3) {
+          canSubmit = false
+        }
+        if (form[1].value.length === 0) {
+          canSubmit = false
+        }
+        if(form[2].value.length === 0) {
+          canSubmit = false
+        }
+
+        return canSubmit;
+      }
+
+      function styleFormButton() {
+        let btn = document.getElementById("btnFormContato");
+        const urlParams = new URLSearchParams(window.location.search);
+        const query = urlParams.get("email");
+        if (query != null && query=="true") {
+          btn.classList.remove(["btn-primary", "btn-invert-color"]);
+          btn.classList.add("btn-success");
+        } else if(query!="true") {
+          btn.classList.add(["btn-primary", "btn-invert-color"]);
+          btn.classList.remove("btn-success");
+        }
+
+      }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init()</script>
+  </body>
+  </html>

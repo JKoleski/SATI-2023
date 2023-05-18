@@ -1,0 +1,161 @@
+$primary: #320F59;
+$secondary: #FAE056; 
+
+$transition-delay-short: 200ms;
+$transition-delay-medium: 300ms;
+$transition-delay-long: 500ms;
+$transition-duration: 100ms;
+$transition-timing-function: ease-in-out;
+
+$card-hover-duration: 300ms;
+
+$card-hover-zoom: 1.05;
+
+.background-img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url("../static/fundo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 10%;
+};
+
+.hero {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    padding: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.89), $primary);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+};
+
+.contact-hover:hover > :first-child {
+    transition-property: color, background-color;
+    -o-transition-property: color, background-color;
+    -moz-transition-property: color, background-color;
+    -webkit-transition-property: color, background-color;
+
+    transition: all $transition-delay-medium $transition-timing-function $transition-duration;
+    background-color: $primary;
+    color: $secondary;
+};
+
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
+
+
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+
+.nav-link {
+    background-color: transparent;
+    &:hover {
+        color: $primary !important;
+        background-color: $secondary;
+        transition-property: color, background-color;
+        -o-transition-property: color, background-color;
+        -moz-transition-property: color, background-color;
+        -webkit-transition-property: color, background-color;
+    
+        transition: all $transition-delay-short $transition-timing-function $transition-duration;
+    };
+}
+
+.btn-invert-color:hover  {
+    color: $primary !important;
+    background-color: $secondary !important;
+    transition-property: color, background-color;
+    -o-transition-property: color, background-color;
+    -moz-transition-property: color, background-color;
+    -webkit-transition-property: color, background-color;
+
+    transition: all $transition-delay-short $transition-timing-function $transition-duration;
+}
+
+.show-hover {
+    opacity: 1;
+    height: 100%;
+}
+
+@media (prefers-reduced-motion) {
+    .show-hover {
+        transition: none !important;
+        opacity: 1 !important;
+        height: 100% !important;
+    }
+
+    .card:hover .card-body .show-hover {
+        opacity: 1;
+        height: auto;
+        max-height: 100%;
+    }
+
+    
+}
+
+
+@include media-breakpoint-up(lg) {
+    .show-hover {
+        transition-property: opacity, height !important;
+        -o-transition-property: opacity, height !important;
+        -moz-transition-property: opacity, height !important;
+        -webkit-transition-property: opacity, height !important;
+        
+        transition: all $card-hover-duration !important;
+        opacity: 0 !important;
+        height: 0 !important;
+        overflow: hidden !important;
+    }
+    
+    .card:hover .card-body .show-hover {
+        opacity: 1 !important;
+        height: auto !important;
+        max-height: 100% !important;
+    }
+
+    .card-hover-zoom {
+    transition: transform $card-hover-duration !important;
+    }
+
+    .card-hover-zoom:hover {
+        transform: scale($card-hover-zoom) !important;
+        -ms-transform: scale($card-hover-zoom) !important;
+        -moz-transform: scale($card-hover-zoom) !important;
+        -webkit-transform: scale($card-hover-zoom) !important;
+    }
+
+    
+}
+
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/tables";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/pagination";
+@import "../node_modules/bootstrap/scss/popover";
+@import "../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/offcanvas";
+@import "../node_modules/bootstrap/scss/placeholders";
+
+// Helper/
+@import "../node_modules/bootstrap/scss/helpers";
+
+// Utilit/
+@import "../node_modules/bootstrap/scss/utilities/api";
