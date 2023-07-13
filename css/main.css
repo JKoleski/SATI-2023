@@ -3284,9 +3284,8 @@ textarea.form-control-lg {
 .fade {
   transition: opacity 0.15s linear;
 }
-.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .row-cols-xl-4 .py-2 .carousel .aos-init .aos-animate{
-  display: flex;
-  flex-direction: row;
+.col .py-2{
+  width: 40%;
 }
 @media (prefers-reduced-motion: reduce) {
   .fade {
