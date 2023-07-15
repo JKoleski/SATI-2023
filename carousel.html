@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+<style>
+    .swiper {
+    width: 100%;
+    height:530px;
+}
+
+.ctn-participants{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.participants{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.content{
+    position: relative;
+    width: 400px;
+    height: 420px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.card{
+    width: 400px;
+    height: 420px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    background-color: #320F59;
+    z-index: 10;
+    border-radius: 10px 10px 0px 0px;
+}
+.ctn-img{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ctn-img img{
+    margin-top: 10px;
+    z-index: 100;
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.card .card-body{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.card .card-body .line-1{
+    display: flex;
+    height: 15%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 10px;
+}
+.line-1 h5{
+    width: 100%;
+    font-size: 18px;
+    margin: 0px;
+    text-align: start;
+}
+.line-1 a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 1000;
+}
+.line-1 a i{
+    width: 25px;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.7);
+}
+.description{
+    width: 100%;
+    height: 75%;
+    text-align: justify;
+    overflow-x: auto;
+}
+.description::-webkit-scrollbar {
+    background-color: #efeeee;
+    width: 8px;
+    border-radius: 5px;
+}
+.description::-webkit-scrollbar-thumb {
+    background-color: #bcbcbc;
+    border-radius: 5px;
+  }
+.description p{
+    margin: 0px;
+    padding: 0px 10px;
+    font-size: 18px;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    background-color: #320F59;
+}
+</style>
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/AndressaOliveira.jpeg"
+                                alt="Andressa Oliveira">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Andressa Oliveira</h5>
+                                <a href="https://www.linkedin.com/in/adasouzza/">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small">Coordenadora de Data Analytics na HEINEKEN Company.
+                                    Especialista
+                                    em Power
+                                    BI e Tableau. Profissional de dados, com mais de 4 anos de experiência, que adora
+                                    desafios e fazer
+                                    coisas que ninguém fez antes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/ViniciusCamargo.jpeg"
+                                alt="Vinicius Andrade">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Vinicius Andrade</h5>
+                                <a href="https://www.linkedin.com/in/prof-vcandrade/">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small"> Professor Adjunto na Universidade Tecnológica Federal do
+                                    Paraná (UTFPR), campus Ponta Grossa.
+                                    Leciona nos cursos de Tecnologia em ADS e BCC. Possui experiência na área de
+                                    Ciência da Computação, com ênfase em Engenharia de Software</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/DiegoAntunes.jpeg"
+                                alt="Diego Roberto Antunes">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Diego Roberto Antunes</h5>
+                                <a href="https://www.linkedin.com/in/drantunes/">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small">
+                                    Doutor em Ciência da Computação, Consultor de UX e TI apaixonado por tecnologia,
+                                    startups e
+                                    resolver problemas complexos com tecnologia. Tem 20 anos de experiência em pesquisa
+                                    e
+                                    desenvolvimento de software com foco em Experiência do Usuário (UX), Aplicações Web
+                                    e Mobile.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/Vagner.jpeg"
+                                alt="Vagner Conhariki">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Vagner Conhariki</h5>
+                                <a href="https://www.linkedin.com/in/vagner-conhariki/">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/Victor.jpeg"
+                                alt="Victor Hugo Tavares">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Victor Hugo Tavares</h5>
+                                <a href="https://www.linkedin.com/in/victor-hugo-soares-tavares-642255160/">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small"> Há 4 anos, está atuando no mercado e acumulando experiências
+                                    significativas na área de desenvolvimento de software, extração e análise de dados.
+                                    Recentemente, decidiu mergulhar ainda mais no emocionante campo da Data Science e
+                                    começou uma pós-graduação especializada nessa área.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/EduardoCarvalho.jpeg"
+                                alt="Eduardo Carvalho">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Eduardo Carvalho</h5>
+                                <a href="https://www.linkedin.com/in/eduardocarnunes/">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small">Engenheiro de visão computacional e aprendizado profundo com
+                                    mais de 5 anos de experiência em
+                                    design, desenvolvimento e implantação de aplicativos. Engenheiro apaixonado e
+                                    analista próspero
+                                    com a capacidade de aplicar técnicas de inteligência artificial e desenvolvimento de
+                                    algoritmos
+                                    para resolver problemas da indústria do mundo real.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/TiagoSanches.jpeg"
+                                alt="Tiago Franco">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Tiago Sanches Franco</h5>
+                                <a href="https://www.linkedin.com/in/tiago-sanches-franco/">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small"> Durante sua graduação, participou do convênio de dupla
+                                    titulação entre a UTFPR e o Instituto
+                                    Politécnico de Bragança (IPB) . Com este acordo, recebeu o título de Mestre em
+                                    Sistemas de
+                                    Informação pelo IPB em 2019, estudando grandes conjuntos de dados educacionais para
+                                    prever o
+                                    abandono escolar. Mais tarde, começou a trabalhar no Centro de Pesquisa em
+                                    Digitalização e
+                                    Robótica Inteligente (CeDRI), continuando seus estudos no Projeto Cognita.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/Gleifer.jpg"
+                                alt="Gleifer Vaz">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Gleifer Vaz Alves</h5>
+                                <a href="https://sites.google.com/view/gleifer">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small">Professor na UTFPR, Campus Ponta Grossa. Trabalha no DAINF
+                                    (Departamento de Informática) e leciona
+                                    no curso de Graduação e Mestrado ( PPGCC ) em Ciência da Computação. Também é
+                                    pesquisador do
+                                    LaCA-IS.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/BrenoCarvalho.jpeg"
+                                alt="Breno Carvalho">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Breno Guilherme Baptista</h5>
+                                <a
+                                    href="https://www.linkedin.com/in/breno-guilherme-de-carvalho-dias-baptista-2176a821a/">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small">Atuou junto ao escritório de advocacia NADAL ADVOGADOS
+                                    ASSOCIADOS, como estagiário e também como advogado pleno, com experiência
+                                    principalmente em processos cíveis nas mais diversas áreas, com foco em direito do
+                                    consumidor, ações em massa e também direito de família.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/AnaClaudia.jpeg"
+                                alt="Ana Cláudia Clausen">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Ana Cláudia Clausen Chaves</h5>
+                                <a href="https://www.linkedin.com/in/ana-claudia-clausen-chaves-1528a731/">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/IsabellaCoelho.jpeg"
+                                alt="Isabella Sguario">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Isabella Sguario de Andrade</h5>
+                                <a href="https://www.linkedin.com/in/isabellacoelhodeandrade/">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small">Formada em Direito pela UEPG (Universidade Estadual de Ponta
+                                    Grossa), com experiência tanto na advocacia privada como em órgãos da administração
+                                    pública. Habilidades desenvolvidas incluem liderança, trabalho em equipe e gestão de
+                                    projetos. Interessada na eficaz prestação da tutela jurisdicional, aborda desafios
+                                    complexos com flexibilidade, adaptabilidade e criatividade</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle"
+                                src="./static/palestrantes/ghost_person_200x200_v1.webp" alt="Marina Pissaia">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Marina Pissaia</h5>
+                                <a>
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/JoaoHenrique.jpeg"
+                                alt="João Henrique Berssanette">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">João Henrique Berssanette</h5>
+                                <a href="https://www.linkedin.com/in/jo%C3%A3o-henrique-berssanette-a9269142/">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small">Professor de Ensino Básico, Técnico e Tecnológico no
+                                    Instituto Federal do Paraná (IFPR), campus
+                                    Telêmaco Borba onde atua nos cursos técnicos integrados ao ensino médio, superiores
+                                    e na
+                                    pós-graduação lecionando componentes curriculares relacionados à Programação de
+                                    Computadores e ao
+                                    processo de Ensino-Aprendizagem.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/Ademir.jpeg"
+                                alt="Ademir Nascimento">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Ademir Nascimento</h5>
+                                <a href="https://www.linkedin.com/in/ademirdejesusnascimento/">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small">Apaixonado por processos e pessoas, pois considera que sem
+                                    processos a empresa está sujeita ao ostracismo, assim como sem o engajamento das
+                                    pessoas os processos e consequentemente os negócios não terão êxito. Este elo
+                                    possibilita a resolução de problemas complexos, no qual ele utiliza uma abordagem
+                                    baseada em análise de dados. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/CristhianBotilha.jpeg"
+                                alt="Cristhian Bonilha">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Cristhian Bonilha</h5>
+                                <a href="https://www.linkedin.com/in/cristhian-bonilha-07359786/">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small"> Participou de competições de programação e obteve sucesso em
+                                    algumas edições, classificando entre
+                                    os 50 melhores times do Brasil na fase nacional, por 3 anos seguidos. Eventualmente
+                                    participa da
+                                    organização de tais competições como problem-setter. Realizou intercâmbio em
+                                    Londres, estudou
+                                    Games Design por 1 ano. Trabalhou por 3 anos na Google Alemanha no time Identity
+                                    Frontend -
+                                    Infraestructure e 2 anos no Canadá no time Currents, onde trabalha atualmente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/Bruno.jpg"
+                                alt="Bruno Leria">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Bruno Leria</h5>
+                                <a href="https://www.linkedin.com/in/bruno-l-77a07486/">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small">Esta cursando o último período de Análise e Desenvolvimento
+                                    de Sistemas e busco uma vaga como desenvolvedor.
+                                    Possui experiência no mercado de tecnologia, atuando principalmente no
+                                    desenvolvimento web como Fullstack.
+                                    Planeja trabalhar com desenvolvimento, seja para web, desktop ou mobile, visando
+                                    aprender as habilidades específicas da profissão e aplicá-las à vida quotidiana e ao
+                                    mercado de trabalho. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/Emanuel.jpeg"
+                                alt="Emanuel Almeida">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Emanuel Almeida</h5>
+                                <a href="https://www.linkedin.com/in/almeida-emanuel/">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small">Cientista de dados júnior que contribui para automações de
+                                    ETL, análise de dados e construção de
+                                    pipelines de alto desempenho em vários projetos. Tem um forte desejo de contribuir
+                                    para projetos
+                                    desafiadores de inteligência artificial. Conhecimento em: Python, Data Science
+                                    (Pandas, NumPy,
+                                    Plotly, SQLAlchemy), SQL (MySQL, Microsoft Server), Dashboards (Power BI, Dash).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/Alceon.jpeg"
+                                alt="Alceon Maluf">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Alceon Maluf Júnior</h5>
+                                <a href="https://www.linkedin.com/in/alceon-maluf-junior-659b0a69/">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small">Analista de Sistemas, formado pela Universidade Tecnológica
+                                    Federal do Paraná, Advogado pela
+                                    Universidade Estadual de Ponta Grossa, Especialista em Direito Digital e Compliance,
+                                    Especialista
+                                    em Desenvolvimento Mobile e Computação na Nuvem.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/GabrielLopes.jpeg"
+                                alt="Gabriel Lope">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Gabriel Lopes Parreira dos Santos</h5>
+                                <a href="https://www.linkedin.com/in/gabriellopes8/">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small">Formado em Ciência da Computação no Centro Universitário FEI,
+                                    com bolsa 100% via ProUni, atualmente é consultor de Pré-vendas na Siemens DISW,
+                                    atua com todo o portfólio cloud-based solutions, entre eles, Mendix (Uma plataforma
+                                    de desenvolvimento Low Code) e MindSphere (Uma plataforma IIoT).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/Aline.jpeg"
+                                alt="Aline Takata">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Aline Takata</h5>
+                                <a href="https://www.linkedin.com/in/aline-takata/">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small">Estudante na UFABC. Em 2018, estudou Ciências Biomédicas na
+                                    UNESP. Entre 2018 e 2019 participou de um projeto de extensão pré-vestibular para o
+                                    ensino de pessoas em vulnerabilidade social como professora de matemática.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="card">
+                        <div class="ctn-img">
+                            <img class="img-fluid rounded-circle" src="./static/palestrantes/Enzo.jpeg" alt="Enzo">
+                        </div>
+                        <div class="card-body">
+                            <div class="line-1">
+                                <h5 class="card-title">Enzo Cecone Chiaramonte</h5>
+                                <a href="https://www.linkedin.com/in/enzo-cecone-chiaramonte-429a22210/">
+                                    <i class="fa-brands fa-linkedin" ></i>
+                                </a>
+                            </div>
+                            <div class="description">
+                                <p class="card-text small">Aluno de Sistemas de Informação na Universidade Presbiteriana
+                                    Mackenzie, atualmente é estagiário na Siemens.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: false,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
