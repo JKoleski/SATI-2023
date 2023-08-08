@@ -464,7 +464,9 @@ legend + * {
   outline-offset: -2px;
   -webkit-appearance: textfield;
 }
-
+.container-info{
+  width: 90%;
+}
 /* rtl:raw:
 [type="tel"],
 [type="url"],
