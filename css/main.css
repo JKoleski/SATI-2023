@@ -3297,9 +3297,7 @@ textarea.form-control-lg {
 .fade {
   transition: opacity 0.15s linear;
 }
-.col .py-2{
-  width: 40%;
-}
+
 @media (prefers-reduced-motion: reduce) {
   .fade {
     transition: none;
@@ -7563,7 +7561,6 @@ textarea.form-control-lg {
   }
   .px-lg-4 {
     padding-right: 1.5rem !important;
-    padding-left: 1.5rem !important;
   }
   .px-lg-5 {
     padding-right: 3rem !important;
