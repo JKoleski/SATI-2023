@@ -694,9 +694,15 @@ progress {
 
 .img-fluid {
   max-width: 100%;
+  min-width: 85px;
   height: auto;
 }
-
+.img-patrocinador{
+  width: 100%;
+  max-width: 150px;
+  min-width: 85px;
+  height: auto;
+}
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -6148,9 +6154,11 @@ textarea.form-control-lg {
 
 .rounded-circle {
   border-radius: 50% !important;
-  width: 200px;
-  height: 200px;
-  margin-top: 5px;
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
+  margin-top: 10px;
+  margin-left: 15px;
 }
 
 .rounded-pill {
@@ -8710,3 +8718,106 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.ctn-inscricao{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.ctn-info-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ctn-info-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ctn-footer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-left{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+.footer-left-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer-right{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-right h5{
+  text-align: center;
+}
+.right-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+@media screen and (max-width: 730px){
+  .ctn-footer{
+    flex-direction: column;
+  }
+  .footer-left{
+    width: 100%;
+    margin-top: 50px;
+  }
+  .footer-left img{
+    width: 180px;
+  }
+  .footer-left p{
+    width: 80%;
+    text-align: start;
+  }
+}
+@media screen and (max-width: 530px){
+  .card-text{
+    height: 200px;
+  }
+  .ctn-inscricao{
+    flex-direction: column;
+  }
+  .ctn-inscricao h2{
+    font-size: 16px;
+  }
+  .ctn-inscricao a{
+    font-size: 14px;
+    text-align: center;
+  }
+  .ctn-inscricao b, span{
+    font-size: 12px;
+  }
+  .ctn-info-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-left{
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .footer-right{
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .right-info{
+    width: 100%;
+    padding-left: 30px;
+  }
+}
+
